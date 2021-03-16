@@ -13,6 +13,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+/**
+ * 2021.3.16    主界面模拟粤康码显示
+ */
 public class MainActivity extends AppCompatActivity {
     private TextView tvTime1,tvTime2,tvTime3;
     private String TAG="wp-MainActivity";
