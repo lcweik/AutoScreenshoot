@@ -2,6 +2,7 @@ package com.viomi.autoscreenshoot;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.text.format.DateFormat;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 //        以下两行全屏显示
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        强制竖屏
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
         initView();
         initData();
