@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ykmp2"
+    android:background="@drawable/ykmxl"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,8 +23,8 @@
         android:id="@+id/tvTime2"
         android:layout_width="249dp"
         android:layout_height="41dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="98dp"
         android:background="@drawable/blue32"
         android:gravity="center_horizontal|center_vertical"
         android:text="2021-03-15 14:13:55"
@@ -34,17 +34,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:textStyle="bold"
-        android:text="23:23"
-        android:textSize="13dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:textColor="@color/white"
         android:id="@+id/tvTime1"
         android:layout_width="45dp"
         android:layout_height="23dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="1dp"
         android:background="@color/time1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="23:23"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,8 +52,8 @@
         android:id="@+id/tvName"
         android:layout_width="17dp"
         android:layout_height="20dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="196dp"
         android:background="@drawable/name2"
         android:text="张"
         android:textColor="@color/black"
