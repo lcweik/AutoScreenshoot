@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ykm9x"
+    android:background="@drawable/ykmp2"
     tools:context=".MainActivity">
 
     <TextView
@@ -21,32 +21,33 @@
     <!--中间显示时间:android:text="2021-03-15 14:13:55"-->
     <TextView
         android:id="@+id/tvTime2"
-        android:layout_width="225dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="87dp"
-        android:background="@drawable/blue_9x_3"
-        android:fontFamily="@font/synormal"
-        android:gravity="center_vertical|center_horizontal"
         android:includeFontPadding="false"
+        android:fontFamily="@font/synormal"
+        android:layout_width="249dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/blue32"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="2021-03-15 14:13:55"
         android:textColor="@color/white"
-        android:textSize="22dp"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+<!--左上角时间 23:23-->
     <TextView
-        android:fontFamily="@font/sylight"
         android:includeFontPadding="false"
-        android:id="@+id/tvTime1"
-        android:layout_width="30dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="308dp"
-        android:background="@drawable/blue_9x_1"
+        android:text=""
+        android:textSize="13dp"
         android:gravity="center_horizontal|center_vertical"
-        android:text="23:23"
         android:textColor="@color/white"
-        android:textSize="10dp"
         android:textStyle="bold"
+        android:id="@+id/tvTime1"
+        android:layout_width="45dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/time1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,8 +55,8 @@
         android:id="@+id/tvName"
         android:layout_width="17dp"
         android:layout_height="20dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/name2"
         android:text="张"
         android:textColor="@color/black"
