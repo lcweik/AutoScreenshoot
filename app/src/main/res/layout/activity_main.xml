@@ -26,14 +26,18 @@
         android:layout_marginStart="97dp"
         android:layout_marginTop="87dp"
         android:background="@drawable/blue_9x_3"
-        android:gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/synormal"
+        android:gravity="center_vertical|center_horizontal"
+        android:includeFontPadding="false"
         android:text="2021-03-15 14:13:55"
         android:textColor="@color/white"
-        android:textSize="24dp"
+        android:textSize="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:fontFamily="@font/sylight"
+        android:includeFontPadding="false"
         android:id="@+id/tvTime1"
         android:layout_width="30dp"
         android:layout_height="23dp"
@@ -42,7 +46,7 @@
         android:gravity="center_horizontal|center_vertical"
         android:text="23:23"
         android:textColor="@color/white"
-        android:textSize="11dp"
+        android:textSize="10dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

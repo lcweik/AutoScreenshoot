@@ -9,6 +9,7 @@ import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
+import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -35,10 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         long sysTime=System.currentTimeMillis();
-        CharSequence sysTimeStr= DateFormat.format("yyyy-MM-dd HH:mm",sysTime);
+        CharSequence sysTimeStr= DateFormat.format("yyyy-MM-dd HH:mm:ss",sysTime);
         Log.i(TAG,"sysTimeStr:"+sysTimeStr);
-        tvTime1.setText(DateFormat.format("HH:mm",sysTime));
-        tvTime2.setText(sysTimeStr);
+        tvTime1.setText(DateFormat.format("HH:mm",sysTime));    //右上角时间
+        tvTime2.setText(sysTimeStr);    //中间时间
+//        tvTime2.setGravity(Gravity.CENTER);
         tvTime3.setVisibility(View.GONE);   //隐藏
         getScreen1();
         getScreen2();
