@@ -18,7 +18,7 @@
         android:textColor="@color/time3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <!--中间显示时间:android:text="2021-03-15 14:13:55"-->
     <TextView
         android:id="@+id/tvTime2"
         android:layout_width="225dp"
@@ -29,7 +29,6 @@
         android:fontFamily="@font/synormal"
         android:gravity="center_vertical|center_horizontal"
         android:includeFontPadding="false"
-        android:text="2021-03-15 14:13:55"
         android:textColor="@color/white"
         android:textSize="22dp"
         app:layout_constraintStart_toStartOf="parent"
