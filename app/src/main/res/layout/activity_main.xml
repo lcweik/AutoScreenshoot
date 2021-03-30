@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ykmxl"
+    android:background="@drawable/ykm6p"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,7 +23,7 @@
         android:id="@+id/tvTime2"
         android:layout_width="249dp"
         android:layout_height="41dp"
-        android:layout_marginStart="112dp"
+        android:layout_marginStart="115dp"
         android:layout_marginTop="98dp"
         android:background="@drawable/blue32"
         android:gravity="center_horizontal|center_vertical"
@@ -37,7 +37,7 @@
         android:id="@+id/tvTime1"
         android:layout_width="45dp"
         android:layout_height="23dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="355dp"
         android:layout_marginTop="1dp"
         android:background="@color/time1"
         android:gravity="center_horizontal|center_vertical"
