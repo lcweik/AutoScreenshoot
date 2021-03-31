@@ -13,10 +13,13 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import com.viomi.autoscreenshoot.databinding.ActivityMainBinding;
 
 /**
  * 2021.3.16    主界面模拟粤康码显示
@@ -24,6 +27,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView tvTime1, tvTime2, tvTime3;
     private String TAG = "wp-MainActivity";
+    private ActivityMainBinding activityMainBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 //        强制竖屏
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        setContentView(R.layout.activity_main);
-        initView();
+        activityMainBinding = ActivityMainBinding.inflate(LayoutInflater.from(this));
+        setContentView(activityMainBinding.getRoot());
         initData();
     }
 
@@ -47,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
                     long sysTime=System.currentTimeMillis();
                     CharSequence sysTimeStr= DateFormat.format("yyyy-MM-dd HH:mm:ss", sysTime);
                     Log.i(TAG,"xwg sysTimeStr:"+sysTimeStr);
-                    tvTime1.setText(DateFormat.format("HH:mm", sysTime));    //右上角时间
-                    tvTime2.setText(sysTimeStr);    //中间时间
+                    activityMainBinding.tvTime1.setText(DateFormat.format("HH:mm", sysTime));
+                    activityMainBinding.tvTime2.setText(sysTimeStr);
                     break;
                 default:
                     break;
@@ -75,14 +79,8 @@ public class MainActivity extends AppCompatActivity {
     }//end TimeThread
 
     private void initData() {
-        tvTime3.setVisibility(View.GONE);   //隐藏
+        activityMainBinding.tvTime3.setVisibility(View.GONE);   //隐藏
         new TimeThread().start();
     }
 
-    private void initView() {
-        tvTime1 = (TextView) findViewById(R.id.tvTime1);
-        tvTime2 = (TextView) findViewById(R.id.tvTime2);
-        tvTime3 = (TextView) findViewById(R.id.tvTime3);
-
-    }
 }
