@@ -7,4 +7,5 @@ PixelXL(android 10)
 Nexus6p（android 8.1）
 
 Pixel2XL效果如下
+
 ![image](https://github.com/yhm2046/AutoScreenshoot/blob/master/img/px2.gif)
