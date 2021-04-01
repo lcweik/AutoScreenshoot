@@ -66,10 +66,10 @@ public class MainActivity extends AppCompatActivity {
         public void run(){
             do{
                 try{
-                    Thread.sleep(1000);
                     Message msg=new Message();
                     msg.what=1;
                     mHandler.sendMessage(msg);
+                    Thread.sleep(1000); //先发送再休眠就不会有短暂停留
                 }catch (InterruptedException e){
                     e.printStackTrace();
                     Log.i(TAG,"TimeThread error:"+e);
